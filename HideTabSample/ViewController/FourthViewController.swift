@@ -1,5 +1,5 @@
 //
-//  ThirdViewController.swift
+//  FourthViewController.swift
 //  HideTabSample
 //
 //  Created by teakun on 2019/09/23.
@@ -8,10 +8,14 @@
 
 import UIKit
 
-class ThirdViewController: UIViewController {
+extension FourthViewController: TabHide {}
+
+class FourthViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .blue
+        
+        self.title = "Fourth"
+        self.view.backgroundColor = .lightGray
     }
 }

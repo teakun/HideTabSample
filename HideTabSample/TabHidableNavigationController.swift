@@ -8,18 +8,19 @@
 
 import UIKit
 
+protocol TabHide: UIViewController {}
+
 class TabHidableNavigationController: UINavigationController {
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
-        if viewController is SecondViewController {
+        if viewController is TabHide {
             viewController.hidesBottomBarWhenPushed = true
         } else {
             children.forEach { (vc) in
-                if vc is SecondViewController {
+                if vc is TabHide {
                     vc.hidesBottomBarWhenPushed = false
                 }
             }
@@ -30,7 +31,7 @@ class TabHidableNavigationController: UINavigationController {
     
     override func popViewController(animated: Bool) -> UIViewController? {
         if children.count >= 3 {
-            if children[children.count - 2] is SecondViewController {
+            if children[children.count - 2] is TabHide {
                 children[children.count - 2].hidesBottomBarWhenPushed = true
             }
         }

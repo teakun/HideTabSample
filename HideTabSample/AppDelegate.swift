@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let navigationVC = TabHidableNavigationController(rootViewController: FirstViewController())
         navigationVC.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 0)
         let tabVC = UITabBarController()
-        tabVC.setViewControllers([navigationVC, ViewController()], animated: true)
+        tabVC.setViewControllers([navigationVC, FirstViewController()], animated: true)
         window?.rootViewController = tabVC
         return true
     }

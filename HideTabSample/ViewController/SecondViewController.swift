@@ -8,12 +8,13 @@
 
 import UIKit
 
+extension SecondViewController: TabHide {}
+
 class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Second"
         self.view.backgroundColor = .green
-        
         let button = UIButton()
         view.addSubview(button)
         button.translatesAutoresizingMaskIntoConstraints = false
