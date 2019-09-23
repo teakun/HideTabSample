@@ -7,21 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD483B2D2338A477004D3033 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD483B2C2338A477004D3033 /* FirstViewController.swift */; };
+		CD483B2F2338A483004D3033 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD483B2E2338A483004D3033 /* SecondViewController.swift */; };
+		CD483B312338A500004D3033 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD483B302338A500004D3033 /* ThirdViewController.swift */; };
 		CDCE64FA23389FCE0088A1DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE64F923389FCE0088A1DA /* AppDelegate.swift */; };
 		CDCE64FC23389FCE0088A1DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE64FB23389FCE0088A1DA /* ViewController.swift */; };
-		CDCE64FF23389FCE0088A1DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDCE64FD23389FCE0088A1DA /* Main.storyboard */; };
 		CDCE650123389FCF0088A1DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDCE650023389FCF0088A1DA /* Assets.xcassets */; };
 		CDCE650423389FCF0088A1DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDCE650223389FCF0088A1DA /* LaunchScreen.storyboard */; };
+		CDCE650C2338A0EE0088A1DA /* TabHidableNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE650B2338A0EE0088A1DA /* TabHidableNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CD483B2C2338A477004D3033 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		CD483B2E2338A483004D3033 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		CD483B302338A500004D3033 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		CDCE64F623389FCE0088A1DA /* HideTabSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HideTabSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDCE64F923389FCE0088A1DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDCE64FB23389FCE0088A1DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CDCE64FE23389FCE0088A1DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CDCE650023389FCF0088A1DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDCE650323389FCF0088A1DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDCE650523389FCF0088A1DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDCE650B2338A0EE0088A1DA /* TabHidableNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabHidableNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +62,13 @@
 			children = (
 				CDCE64F923389FCE0088A1DA /* AppDelegate.swift */,
 				CDCE64FB23389FCE0088A1DA /* ViewController.swift */,
-				CDCE64FD23389FCE0088A1DA /* Main.storyboard */,
 				CDCE650023389FCF0088A1DA /* Assets.xcassets */,
 				CDCE650223389FCF0088A1DA /* LaunchScreen.storyboard */,
 				CDCE650523389FCF0088A1DA /* Info.plist */,
+				CDCE650B2338A0EE0088A1DA /* TabHidableNavigationController.swift */,
+				CD483B2C2338A477004D3033 /* FirstViewController.swift */,
+				CD483B2E2338A483004D3033 /* SecondViewController.swift */,
+				CD483B302338A500004D3033 /* ThirdViewController.swift */,
 			);
 			path = HideTabSample;
 			sourceTree = "<group>";
@@ -124,7 +133,6 @@
 			files = (
 				CDCE650423389FCF0088A1DA /* LaunchScreen.storyboard in Resources */,
 				CDCE650123389FCF0088A1DA /* Assets.xcassets in Resources */,
-				CDCE64FF23389FCE0088A1DA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,20 +145,16 @@
 			files = (
 				CDCE64FC23389FCE0088A1DA /* ViewController.swift in Sources */,
 				CDCE64FA23389FCE0088A1DA /* AppDelegate.swift in Sources */,
+				CDCE650C2338A0EE0088A1DA /* TabHidableNavigationController.swift in Sources */,
+				CD483B2F2338A483004D3033 /* SecondViewController.swift in Sources */,
+				CD483B312338A500004D3033 /* ThirdViewController.swift in Sources */,
+				CD483B2D2338A477004D3033 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CDCE64FD23389FCE0088A1DA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CDCE64FE23389FCE0088A1DA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CDCE650223389FCF0088A1DA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

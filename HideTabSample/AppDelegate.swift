@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  HideTabSample
 //
-//  Created by 武田悠暉 on 2019/09/23.
+//  Created by teakun on 2019/09/23.
 //  Copyright © 2019 kittengine.com. All rights reserved.
 //
 
@@ -15,7 +15,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
+        
+        let navigationVC = TabHidableNavigationController(rootViewController: FirstViewController())
+        navigationVC.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 0)
+        let tabVC = UITabBarController()
+        tabVC.setViewControllers([navigationVC, ViewController()], animated: true)
+        window?.rootViewController = tabVC
         return true
     }
 

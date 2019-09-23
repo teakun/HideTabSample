@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ThirdViewController.swift
 //  HideTabSample
 //
 //  Created by teakun on 2019/09/23.
@@ -8,10 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ThirdViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .red
+        self.view.backgroundColor = .blue
     }
 }
-
